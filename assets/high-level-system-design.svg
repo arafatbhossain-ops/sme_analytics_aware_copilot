@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1800" height="1050" viewBox="0 0 1800 1050" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF6FF"/>
+    </linearGradient>
+
+    <linearGradient id="mainCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FBFF"/>
+    </linearGradient>
+
+    <linearGradient id="highlightCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EEF2FF"/>
+      <stop offset="100%" stop-color="#F5F3FF"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M2,2 L12,7 L2,12 Z" fill="#334155"/>
+    </marker>
+
+    <marker id="purpleArrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M2,2 L12,7 L2,12 Z" fill="#7C3AED"/>
+    </marker>
+
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-weight: 800; font-size: 42px; fill: #0F172A; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 21px; fill: #475569; }
+      .cardTitle { font-family: Arial, Helvetica, sans-serif; font-weight: 800; font-size: 23px; fill: #0F172A; }
+      .cardText { font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 17px; fill: #334155; }
+      .smallText { font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 14px; fill: #64748B; }
+      .tagText { font-family: Arial, Helvetica, sans-serif; font-weight: 800; font-size: 13px; fill: #FFFFFF; letter-spacing: 0.3px; }
+      .noteTitle { font-family: Arial, Helvetica, sans-serif; font-weight: 800; font-size: 18px; fill: #0F172A; }
+      .noteText { font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 15px; fill: #334155; }
+      .arrowLine { stroke: #334155; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .genaiLine { stroke: #7C3AED; stroke-width: 3; stroke-dasharray: 10 8; fill: none; marker-end: url(#purpleArrow); }
+      .card { rx: 28; ry: 28; filter: url(#softShadow); stroke-width: 1.6; }
+      .mini { rx: 20; ry: 20; filter: url(#softShadow); stroke-width: 1.3; }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1050" fill="url(#pageBg)"/>
+
+  <!-- Header -->
+  <text x="90" y="86" class="title">Analytics-Aware AI Assistant for Small Businesses</text>
+  <text x="90" y="124" class="subtitle">A privacy-safe workflow that turns messy business data into validated metrics, then uses GenAI to explain them in plain English.</text>
+
+  <!-- Top distinction ribbon -->
+  <rect x="90" y="160" width="1620" height="88" rx="28" fill="#FFFFFF" stroke="#DBEAFE" filter="url(#softShadow)"/>
+  <rect x="118" y="184" width="176" height="38" rx="19" fill="#2563EB"/>
+  <text x="145" y="209" class="tagText">KEY POINT</text>
+  <text x="320" y="195" class="noteTitle">Not just a chatbot:</text>
+  <text x="320" y="222" class="noteText">The tool prepares, validates, protects, and models business data before any GenAI explanation is generated.</text>
+
+  <!-- GenAI API card -->
+  <rect x="1220" y="290" width="390" height="160" class="mini" fill="#FAF5FF" stroke="#C4B5FD"/>
+  <text x="1250" y="325" class="cardTitle">Large GenAI Model APIs</text>
+  <text x="1250" y="358" class="cardText">Used for semantic reasoning,</text>
+  <text x="1250" y="383" class="cardText">business-language explanation,</text>
+  <text x="1250" y="408" class="cardText">and recommendations.</text>
+  <text x="1250" y="435" class="smallText">Receives only sanitized metadata and metrics.</text>
+
+  <!-- Main horizontal pipeline -->
+  <rect x="90" y="500" width="250" height="250" class="card" fill="url(#mainCard)" stroke="#BFDBFE"/>
+  <circle cx="135" cy="548" r="24" fill="#DBEAFE"/>
+  <text x="128" y="557" class="cardTitle">1</text>
+  <text x="125" y="600" class="cardTitle">Messy SME Data</text>
+  <text x="125" y="638" class="cardText">Spreadsheets</text>
+  <text x="125" y="666" class="cardText">Order exports</text>
+  <text x="125" y="694" class="cardText">OLTP-style tables</text>
+  <text x="125" y="722" class="cardText">Unstructured notes</text>
+
+  <rect x="405" y="500" width="250" height="250" class="card" fill="url(#mainCard)" stroke="#A7F3D0"/>
+  <circle cx="450" cy="548" r="24" fill="#DCFCE7"/>
+  <text x="443" y="557" class="cardTitle">2</text>
+  <text x="440" y="600" class="cardTitle">Privacy Gate</text>
+  <text x="440" y="638" class="cardText">Choose standard</text>
+  <text x="440" y="666" class="cardText">PII / HIPAA-aware</text>
+  <text x="440" y="694" class="cardText">Detect sensitive fields</text>
+  <text x="440" y="722" class="cardText">Mask or exclude PII</text>
+
+  <rect x="720" y="465" width="330" height="320" class="card" fill="url(#highlightCard)" stroke="#8B5CF6"/>
+  <rect x="755" y="492" width="190" height="38" rx="19" fill="#7C3AED"/>
+  <text x="780" y="517" class="tagText">CORE INNOVATION</text>
+  <text x="755" y="570" class="cardTitle">Analytics Model Builder</text>
+  <text x="755" y="610" class="cardText">Infers business entities</text>
+  <text x="755" y="638" class="cardText">Creates fact/dimension datasets</text>
+  <text x="755" y="666" class="cardText">Defines metrics and relationships</text>
+  <text x="755" y="694" class="cardText">Validates data quality</text>
+  <text x="755" y="722" class="cardText">Creates repeatable workflow</text>
+  <text x="755" y="758" class="smallText">This is the analytics-aware layer generic chatbots lack.</text>
+
+  <rect x="1115" y="500" width="250" height="250" class="card" fill="url(#mainCard)" stroke="#FED7AA"/>
+  <circle cx="1160" cy="548" r="24" fill="#FFEDD5"/>
+  <text x="1153" y="557" class="cardTitle">4</text>
+  <text x="1150" y="600" class="cardTitle">Metrics Engine</text>
+  <text x="1150" y="638" class="cardText">Revenue trends</text>
+  <text x="1150" y="666" class="cardText">Inventory risk</text>
+  <text x="1150" y="694" class="cardText">Delay / return rates</text>
+  <text x="1150" y="722" class="cardText">Anomaly signals</text>
+
+  <rect x="1430" y="500" width="250" height="250" class="card" fill="url(#mainCard)" stroke="#FECACA"/>
+  <circle cx="1475" cy="548" r="24" fill="#FEE2E2"/>
+  <text x="1468" y="557" class="cardTitle">5</text>
+  <text x="1465" y="600" class="cardTitle">Business Output</text>
+  <text x="1465" y="638" class="cardText">Weekly report</text>
+  <text x="1465" y="666" class="cardText">Dashboard</text>
+  <text x="1465" y="694" class="cardText">Action items</text>
+  <text x="1465" y="722" class="cardText">Scheduled refresh</text>
+
+  <!-- Arrows -->
+  <path d="M340 625 L405 625" class="arrowLine"/>
+  <path d="M655 625 L720 625" class="arrowLine"/>
+  <path d="M1050 625 L1115 625" class="arrowLine"/>
+  <path d="M1365 625 L1430 625" class="arrowLine"/>
+
+  <!-- GenAI assist lines -->
+  <path d="M1290 450 C1180 500, 1030 520, 910 558" class="genaiLine"/>
+  <path d="M1415 450 C1415 500, 1480 520, 1540 500" class="genaiLine"/>
+
+  <!-- Privacy annotation -->
+  <rect x="398" y="780" width="970" height="62" rx="22" fill="#FFFFFF" stroke="#FCA5A5" filter="url(#softShadow)"/>
+  <text x="430" y="806" class="noteTitle">Privacy-safe design:</text>
+  <text x="430" y="830" class="noteText">Raw customer records and sensitive fields are removed before GenAI is used. The AI receives only sanitized schema, metadata, and aggregated metrics.</text>
+
+  <!-- Bottom comparison row -->
+  <rect x="90" y="895" width="500" height="105" rx="24" fill="#FFFFFF" stroke="#DBEAFE" filter="url(#softShadow)"/>
+  <text x="120" y="930" class="noteTitle">Different from generic GenAI</text>
+  <text x="120" y="958" class="noteText">Does not blindly analyze pasted data.</text>
+  <text x="120" y="982" class="noteText">It builds an analytics workflow first.</text>
+
+  <rect x="650" y="895" width="500" height="105" rx="24" fill="#FFFFFF" stroke="#DBEAFE" filter="url(#softShadow)"/>
+  <text x="680" y="930" class="noteTitle">Democratization for SMEs</text>
+  <text x="680" y="958" class="noteText">Packages enterprise-style analytics into a simpler</text>
+  <text x="680" y="982" class="noteText">workflow for smaller businesses.</text>
+
+  <rect x="1210" y="895" width="500" height="105" rx="24" fill="#FFFFFF" stroke="#DBEAFE" filter="url(#softShadow)"/>
+  <text x="1240" y="930" class="noteTitle">Human support opportunities</text>
+  <text x="1240" y="958" class="noteText">Implementation, data/AI support, training,</text>
+  <text x="1240" y="982" class="noteText">privacy, compliance, and analytics services.</text>
+</svg>

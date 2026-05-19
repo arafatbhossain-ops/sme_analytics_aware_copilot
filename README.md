@@ -1,5 +1,7 @@
 # Privacy-Safe SME Data Co-Pilot
 
+Visit the link to see the prototype: https://tinyurl.com/smecopilot
+
 A focused Streamlit prototype showing how a small business can turn messy operational data into validated, privacy-safe analytics and an AI-assisted weekly operations report.
 
 ## What this prototype demonstrates
@@ -57,6 +59,26 @@ For Python 3.13, this version uses modern dependency ranges that avoid older Num
 7. Open **AI Report** to show the safe aggregated payload and the weekly operations report.
 8. Open **Why It Is Different** to explain the difference from generic GenAI and the democratization/employment angle.
 
-## RFE-friendly framing
-
 This prototype demonstrates a focused implementation of a privacy-safe AI analytics assistant for SMEs. Unlike general GenAI use, the prototype first detects and excludes sensitive fields, validates data, creates analytics-ready structures, computes metrics locally, and sends only aggregated information to the AI layer for plain-English reporting. It illustrates how secure data engineering and GenAI can be combined to make analytics more accessible for small businesses while reducing privacy risk.
+
+## System Design
+
+### High-Level System Design
+
+The following diagram shows the overall architecture of the SME Analytics-Aware Copilot. It illustrates how raw SME business data flows through privacy-aware processing, analytics modeling, GenAI-assisted insight generation, and user-facing reporting workflows.
+
+<p align="center">
+  <img src="assets/high-level-system-design.svg" alt="High-Level System Design" width="900"/>
+</p>
+
+---
+
+### Core Innovation: Analytics-Aware Data Modeller
+
+The core innovation of this system is the Analytics-Aware Data Modeller. Instead of allowing a generic chatbot to directly analyze raw business data, this layer transforms messy SME data into privacy-safe, validated, reusable analytics models.
+
+It identifies business entities, maps relationships, defines reusable metrics, applies privacy-aware transformations, validates data quality, and prepares AI-ready analytical context for GenAI-powered explanations and recommendations.
+
+<p align="center">
+  <img src="assets/analytics-aware-data-modeller.svg" alt="Analytics-Aware Data Modeller" width="900"/>
+</p>

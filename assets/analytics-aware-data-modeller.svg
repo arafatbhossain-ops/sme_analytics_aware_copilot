@@ -1,0 +1,198 @@
+<svg width="1600" height="1050" viewBox="0 0 1600 1050" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="55%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fff8f1"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f4c81"/>
+      <stop offset="100%" stop-color="#1f7a8c"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3e3"/>
+      <stop offset="100%" stop-color="#ffe0b8"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eaf5ff"/>
+      <stop offset="100%" stop-color="#dcecff"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ecfff4"/>
+      <stop offset="100%" stop-color="#d9f7e6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L12,7 L2,12 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L12,7 L2,12 Z" fill="#0f4c81"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L12,7 L2,12 Z" fill="#c65d00"/>
+    </marker>
+    <style>
+      .title{font-family:Arial, Helvetica, sans-serif;font-size:34px;font-weight:800;fill:#0f172a;}
+      .subtitle{font-family:Arial, Helvetica, sans-serif;font-size:18px;fill:#475569;}
+      .sectionTitle{font-family:Arial, Helvetica, sans-serif;font-size:20px;font-weight:800;fill:#0f172a;}
+      .smallTitle{font-family:Arial, Helvetica, sans-serif;font-size:17px;font-weight:800;fill:#0f172a;}
+      .text{font-family:Arial, Helvetica, sans-serif;font-size:14px;fill:#334155;}
+      .smallText{font-family:Arial, Helvetica, sans-serif;font-size:13px;fill:#475569;}
+      .tinyText{font-family:Arial, Helvetica, sans-serif;font-size:12px;fill:#64748b;}
+      .whiteTitle{font-family:Arial, Helvetica, sans-serif;font-size:24px;font-weight:800;fill:#ffffff;}
+      .whiteText{font-family:Arial, Helvetica, sans-serif;font-size:15px;fill:#eaf6ff;}
+      .label{font-family:Arial, Helvetica, sans-serif;font-size:13px;font-weight:700;fill:#0f4c81;}
+      .pillText{font-family:Arial, Helvetica, sans-serif;font-size:13px;font-weight:700;fill:#334155;}
+      .arrowLine{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow);}
+      .blueArrow{stroke:#0f4c81;stroke-width:3;fill:none;marker-end:url(#arrowBlue);}
+      .orangeArrow{stroke:#c65d00;stroke-width:3;fill:none;marker-end:url(#arrowOrange);stroke-dasharray:8 7;}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1050" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="800" y="60" text-anchor="middle" class="title">Core Innovation System Design</text>
+  <text x="800" y="91" text-anchor="middle" class="subtitle">Privacy-safe, analytics-aware model building for SME data — before GenAI generates insights</text>
+
+  <!-- Top innovation statement -->
+  <rect x="330" y="118" width="940" height="58" rx="20" fill="#ffffff" stroke="#cbd5e1" filter="url(#softShadow)"/>
+  <text x="800" y="143" text-anchor="middle" class="smallTitle">Main technical distinction</text>
+  <text x="800" y="164" text-anchor="middle" class="text">The system does not send raw SME data directly to a chatbot; it first builds validated, reusable, privacy-safe analytics models.</text>
+
+  <!-- Left data sources -->
+  <rect x="55" y="230" width="235" height="410" rx="24" fill="#ffffff" stroke="#cbd5e1" filter="url(#shadow)"/>
+  <text x="172" y="267" text-anchor="middle" class="sectionTitle">SME Data Sources</text>
+  <text x="172" y="293" text-anchor="middle" class="smallText">messy, fragmented, non-standardized</text>
+
+  <rect x="83" y="325" width="180" height="54" rx="14" fill="url(#blueGrad)" stroke="#b6d9ff"/>
+  <text x="173" y="348" text-anchor="middle" class="smallTitle">Business Files</text>
+  <text x="173" y="368" text-anchor="middle" class="smallText">CSV, Excel, PDFs</text>
+
+  <rect x="83" y="397" width="180" height="54" rx="14" fill="url(#blueGrad)" stroke="#b6d9ff"/>
+  <text x="173" y="420" text-anchor="middle" class="smallTitle">Operational Apps</text>
+  <text x="173" y="440" text-anchor="middle" class="smallText">POS, inventory, CRM</text>
+
+  <rect x="83" y="469" width="180" height="54" rx="14" fill="url(#blueGrad)" stroke="#b6d9ff"/>
+  <text x="173" y="492" text-anchor="middle" class="smallTitle">Cloud Databases</text>
+  <text x="173" y="512" text-anchor="middle" class="smallText">SQL, warehouses</text>
+
+  <rect x="83" y="541" width="180" height="54" rx="14" fill="url(#blueGrad)" stroke="#b6d9ff"/>
+  <text x="173" y="564" text-anchor="middle" class="smallTitle">Domain Notes</text>
+  <text x="173" y="584" text-anchor="middle" class="smallText">business rules, goals</text>
+
+  <!-- Intake/privacy profile -->
+  <rect x="350" y="250" width="285" height="365" rx="24" fill="#ffffff" stroke="#cbd5e1" filter="url(#shadow)"/>
+  <text x="493" y="288" text-anchor="middle" class="sectionTitle">Secure Data Intake</text>
+  <text x="493" y="314" text-anchor="middle" class="smallText">user-controlled privacy &amp; scope</text>
+
+  <rect x="380" y="346" width="225" height="48" rx="13" fill="url(#orangeGrad)" stroke="#ffc98a"/>
+  <text x="493" y="376" text-anchor="middle" class="smallTitle">Choose Privacy Standard</text>
+
+  <rect x="380" y="410" width="225" height="48" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="493" y="440" text-anchor="middle" class="text">PII / HIPAA-aware / GDPR-style</text>
+
+  <rect x="380" y="478" width="225" height="48" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="493" y="508" text-anchor="middle" class="text">Detect sensitive fields</text>
+
+  <rect x="380" y="542" width="225" height="48" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="493" y="572" text-anchor="middle" class="text">Mask, tokenize, aggregate</text>
+
+  <!-- Core Innovation container -->
+  <rect x="700" y="210" width="560" height="500" rx="28" fill="url(#coreGrad)" filter="url(#shadow)"/>
+  <text x="980" y="252" text-anchor="middle" class="whiteTitle">CORE INNOVATION</text>
+  <text x="980" y="280" text-anchor="middle" class="whiteText">Analytics-Aware Model Builder</text>
+  <text x="980" y="306" text-anchor="middle" class="whiteText">turns raw SME data into reusable, validated business metrics</text>
+
+  <!-- Core cards -->
+  <rect x="730" y="340" width="240" height="90" rx="18" fill="#ffffff" opacity="0.97"/>
+  <text x="850" y="367" text-anchor="middle" class="smallTitle">1. Semantic Understanding</text>
+  <text x="850" y="392" text-anchor="middle" class="smallText">Infers business meaning from</text>
+  <text x="850" y="412" text-anchor="middle" class="smallText">columns, files, and records</text>
+
+  <rect x="990" y="340" width="240" height="90" rx="18" fill="#ffffff" opacity="0.97"/>
+  <text x="1110" y="367" text-anchor="middle" class="smallTitle">2. Entity Mapper</text>
+  <text x="1110" y="392" text-anchor="middle" class="smallText">Maps to customers, products,</text>
+  <text x="1110" y="412" text-anchor="middle" class="smallText">orders, vendors, inventory</text>
+
+  <rect x="730" y="455" width="240" height="90" rx="18" fill="#ffffff" opacity="0.97"/>
+  <text x="850" y="482" text-anchor="middle" class="smallTitle">3. Metric Generator</text>
+  <text x="850" y="507" text-anchor="middle" class="smallText">Defines reusable metrics:</text>
+  <text x="850" y="527" text-anchor="middle" class="smallText">revenue, churn, delay, returns</text>
+
+  <rect x="990" y="455" width="240" height="90" rx="18" fill="#ffffff" opacity="0.97"/>
+  <text x="1110" y="482" text-anchor="middle" class="smallTitle">4. Model &amp; Pipeline Builder</text>
+  <text x="1110" y="507" text-anchor="middle" class="smallText">Creates fact/dimension datasets</text>
+  <text x="1110" y="527" text-anchor="middle" class="smallText">and scheduled workflows</text>
+
+  <rect x="860" y="575" width="240" height="90" rx="18" fill="#ffffff" opacity="0.97"/>
+  <text x="980" y="602" text-anchor="middle" class="smallTitle">5. Validation &amp; Governance</text>
+  <text x="980" y="627" text-anchor="middle" class="smallText">Checks quality, lineage, privacy,</text>
+  <text x="980" y="647" text-anchor="middle" class="smallText">auditability, and reliability</text>
+
+  <!-- Large AI models side support -->
+  <rect x="710" y="740" width="540" height="122" rx="24" fill="#ffffff" stroke="#cbd5e1" filter="url(#shadow)"/>
+  <text x="980" y="775" text-anchor="middle" class="sectionTitle">Large AI Models as Controlled Assistants</text>
+  <text x="980" y="803" text-anchor="middle" class="text">Used to support semantic mapping, metric suggestions, workflow generation, and explanations</text>
+  <text x="980" y="829" text-anchor="middle" class="label">Important: LLMs receive sanitized metadata, aggregated metrics, and approved context — not unrestricted raw records.</text>
+
+  <!-- Right clean layer + outputs -->
+  <rect x="1320" y="235" width="225" height="156" rx="24" fill="#ffffff" stroke="#cbd5e1" filter="url(#shadow)"/>
+  <text x="1432" y="271" text-anchor="middle" class="sectionTitle">Clean Analytics Layer</text>
+  <text x="1432" y="303" text-anchor="middle" class="smallText">trusted datasets</text>
+  <text x="1432" y="326" text-anchor="middle" class="smallText">metric definitions</text>
+  <text x="1432" y="349" text-anchor="middle" class="smallText">lineage &amp; schedules</text>
+
+  <rect x="1320" y="446" width="225" height="152" rx="24" fill="#ffffff" stroke="#cbd5e1" filter="url(#shadow)"/>
+  <text x="1432" y="482" text-anchor="middle" class="sectionTitle">GenAI Insight Layer</text>
+  <text x="1432" y="514" text-anchor="middle" class="smallText">business explanations</text>
+  <text x="1432" y="537" text-anchor="middle" class="smallText">root-cause narratives</text>
+  <text x="1432" y="560" text-anchor="middle" class="smallText">recommendations</text>
+
+  <rect x="1320" y="655" width="225" height="205" rx="24" fill="url(#greenGrad)" stroke="#b7e7c9" filter="url(#shadow)"/>
+  <text x="1432" y="691" text-anchor="middle" class="sectionTitle">SME Outputs</text>
+  <rect x="1345" y="716" width="175" height="32" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="1432" y="737" text-anchor="middle" class="smallText">Dashboards</text>
+  <rect x="1345" y="759" width="175" height="32" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="1432" y="780" text-anchor="middle" class="smallText">Scheduled reports</text>
+  <rect x="1345" y="802" width="175" height="32" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="1432" y="823" text-anchor="middle" class="smallText">Action items</text>
+
+  <!-- Data analyst / configuration strip -->
+  <rect x="350" y="680" width="285" height="182" rx="24" fill="#ffffff" stroke="#cbd5e1" filter="url(#shadow)"/>
+  <text x="493" y="716" text-anchor="middle" class="sectionTitle">Analyst Controls</text>
+  <text x="493" y="744" text-anchor="middle" class="smallText">optional technical configuration</text>
+  <rect x="382" y="770" width="222" height="34" rx="11" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="493" y="792" text-anchor="middle" class="smallText">select business goal</text>
+  <rect x="382" y="813" width="222" height="34" rx="11" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="493" y="835" text-anchor="middle" class="smallText">approve metrics &amp; datasets</text>
+
+  <!-- Arrows main flow -->
+  <path class="arrowLine" d="M290 435 C315 435 325 435 350 435"/>
+  <path class="arrowLine" d="M635 435 C665 435 670 435 700 435"/>
+  <path class="arrowLine" d="M1260 435 C1292 435 1288 313 1320 313"/>
+  <path class="arrowLine" d="M1432 391 L1432 446"/>
+  <path class="arrowLine" d="M1432 598 L1432 655"/>
+
+  <!-- Support arrows -->
+  <path class="orangeArrow" d="M980 740 C980 715 980 700 980 665"/>
+  <path class="blueArrow" d="M635 775 C665 775 680 645 720 620"/>
+
+  <!-- bottom comparison / differentiator -->
+  <rect x="80" y="910" width="1440" height="92" rx="24" fill="#ffffff" stroke="#cbd5e1" filter="url(#softShadow)"/>
+  <text x="800" y="940" text-anchor="middle" class="sectionTitle">Why this is different from a generic GenAI chatbot</text>
+  <text x="800" y="969" text-anchor="middle" class="text">Generic chatbot: raw data in → one-time answer.  Proposed system: privacy filtering → analytics model building → validated metrics → scheduled workflows → explainable insights.</text>
+
+  <!-- small icons circles -->
+  <circle cx="172" cy="305" r="18" fill="#0f4c81" opacity="0.12"/>
+  <text x="172" y="311" text-anchor="middle" font-family="Arial" font-size="18" font-weight="800" fill="#0f4c81">D</text>
+  <circle cx="493" cy="330" r="18" fill="#c65d00" opacity="0.15"/>
+  <text x="493" y="336" text-anchor="middle" font-family="Arial" font-size="18" font-weight="800" fill="#c65d00">P</text>
+  <circle cx="1432" cy="621" r="18" fill="#15803d" opacity="0.14"/>
+  <text x="1432" y="627" text-anchor="middle" font-family="Arial" font-size="18" font-weight="800" fill="#15803d">O</text>
+</svg>
